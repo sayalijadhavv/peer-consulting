@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Careers - Peer Consulting</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="index.html">Peer Consulting</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="services.html" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Industries <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="industries.html#public">Public Sector</a></li>
+                        <li><a href="industries.html#private">Private Sector</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a href="#" class="nav-link">Company <i class="fas fa-chevron-down"></i></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="community.html">Community Support</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a href="careers.html" class="nav-link">Careers</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Careers</h1>
+            <p>Join our team of talented professionals and help us deliver innovative technology solutions that transform businesses.</p>
+        </div>
+    </section>
+
+    <!-- Careers Intro -->
+    <section class="careers-intro">
+        <div class="container">
+            <div class="intro-content">
+                <h2>Careers</h2>
+                <p>Our employee-employer relationship framework is based on an open and honest conversation. We forge strong and healthy alliances with our employees and invest in long-term relationships.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Job Openings -->
+    <section class="job-openings">
+        <div class="container">
+            <h2>Job Openings</h2>
+            <p>Peer is continually and actively looking for top talent to support critical roles in engineering, application development, quality assurance, knowledge management, business process management, project management. We help our clients find the right people to address their challenges effectively and efficiently.</p>
+        </div>
+    </section>
+
+    <!-- Resume Submission -->
+    <section class="resume-submission">
+        <div class="container">
+            <div class="submission-content">
+                <h2>Submit Your Resume</h2>
+                <p>Don't see a position that matches your skills? Submit your resume and we'll keep you in mind for future opportunities.</p>
+                
+                <form class="resume-form" id="resumeForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="resumeFirstName">First Name *</label>
+                            <input type="text" id="resumeFirstName" name="firstName" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="resumeLastName">Last Name *</label>
+                            <input type="text" id="resumeLastName" name="lastName" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="resumeEmail">Email Address *</label>
+                            <input type="email" id="resumeEmail" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="resumePhone">Phone Number</label>
+                            <input type="tel" id="resumePhone" name="phone">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="resumeJobTitle">Desired Job Title</label>
+                        <input type="text" id="resumeJobTitle" name="jobTitle" placeholder="e.g., Software Engineer, Project Manager">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="resumeFile">Upload Resume *</label>
+                        <div class="file-upload">
+                            <input type="file" id="resumeFile" name="resume" accept=".pdf,.doc,.docx" required>
+                            <div class="file-upload-text">
+                                <i class="fas fa-cloud-upload-alt"></i>
+                                <p>Click or drag a file to this area to upload</p>
+                                <small>Supported formats: PDF, DOC, DOCX (Max 5MB)</small>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="resumeMessage">Additional Information</label>
+                        <textarea id="resumeMessage" name="message" rows="4" placeholder="Tell us about your experience, skills, and what you're looking for..."></textarea>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="consent" value="yes" required>
+                            <span class="checkmark"></span>
+                            I consent to having my personal information securely stored in your database for job placement purposes.
+                        </label>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn">
+                        <span>Submit Resume</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Peer Consulting Resources, Inc</h4>
+                    <p>20 Jefferson Plaza, Princeton, NJ 08540</p>
+                    <p>Monday-Friday 9:00 AM - 5:30 PM</p>
+                    <p>+1 732 444 4645</p>
+                    <p>contact@peer-consulting.com</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="services.html">Services</a></li>
+                        <li><a href="industries.html">Industries</a></li>
+                        <li><a href="about.html">Company</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="careers.html">Careers</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="privacy.html">Privacy Policy</a></li>
+                        <li><a href="terms.html">Terms of Use</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Peer Consulting Resources, Inc. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
